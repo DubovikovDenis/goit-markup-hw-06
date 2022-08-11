@@ -464,10 +464,28 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <p class="footer-form-desc">Подпишитесь на рассылку</p>
+          <form class="footer-form-input">
+            <input
+              type="email"
+              name="user_email"
+              class="footer-input"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="footer-btn">
+              Подписаться
+              <svg class="footer-btn-icon">
+                <use href="./images/icons.svg#icon-footer"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--MODAL WINDOW-->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon">
@@ -475,6 +493,7 @@
           </svg>
         </button>
         <form class="modal-form">
+          <p class="modal-desc">Оставьте свои данные, мы вам перезвоним</p>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Имя</span>
             <span class="modal-form-input-wrapper">
@@ -536,10 +555,12 @@
               id="user_policy"
               type="checkbox"
               name="user-policy"
-              class="modal-form-check"
+              class="modal-form-check visually-hidden"
             />
-            <span class="fake-check-icon"></span> Соглашаюсь с рассылкой и
-            принимаю<a href="">Условия договора</a></label
+            <span class="fake-check-icon"></span>Соглашаюсь с рассылкой и
+            принимаю&nbsp;<a class="check-link" href=""
+              >Условия договора</a
+            ></label
           >
           <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
